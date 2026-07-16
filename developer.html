@@ -87,3 +87,92 @@
   </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background:
+        linear-gradient(rgba(2, 6, 23, 0.72), rgba(2, 6, 23, 0.82)),
+        url("Developer/1%20(1).jpg") center / cover fixed;
+      padding: 24px;
+    }
+    .card {
+      max-width: 720px;
+      width: 100%;
+      padding: 28px;
+      border-radius: 24px;
+      background: rgba(255,255,255,0.1);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+      backdrop-filter: blur(12px);
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.14);
+    }
+    .menu-gif {
+      display: block;
+      width: min(180px, 55vw);
+      margin: 0 auto 18px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    }
+    h1 { margin-bottom: 12px; font-size: 2rem; }
+    p { line-height: 1.6; color: #e2e8f0; margin-bottom: 20px; }
+    .folder-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(140px, 1fr));
+      gap: 16px;
+      margin: 20px 0;
+    }
+    .folder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.14);
+      color: #fff;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .folder:hover {
+      transform: translateY(-4px);
+      background: rgba(255,255,255,0.22);
+    }
+    .folder-icon { font-size: 42px; margin-bottom: 8px; }
+    .back-link {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #38bdf8, #6366f1);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="menu-gif" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Animated developer illustration">
+    <h1>Developer</h1>
+    <p>Building modern web experiences and turning ideas into interactive pages.</p>
+    <div class="folder-grid">
+      <a class="folder" href="Developer/">
+        <div class="folder-icon">💻</div>
+        <span>Developer Man Pictures</span>
+      </a>
+    </div>
+    <a class="back-link" href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>
