@@ -12,7 +12,9 @@
       place-items: center;
       font-family: Arial, sans-serif;
       color: #fff;
-      background: linear-gradient(135deg, #020617, #0f172a 45%, #2563eb);
+      background:
+        linear-gradient(rgba(2, 6, 23, 0.72), rgba(2, 6, 23, 0.82)),
+        url("Developer/1%20(1).jpg") center / cover fixed;
       padding: 24px;
     }
     .card {
@@ -25,6 +27,13 @@
       backdrop-filter: blur(12px);
       text-align: center;
       border: 1px solid rgba(255,255,255,0.14);
+    }
+    .menu-gif {
+      display: block;
+      width: min(180px, 55vw);
+      margin: 0 auto 18px;
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
     }
     h1 { margin-bottom: 12px; font-size: 2rem; }
     p { line-height: 1.6; color: #e2e8f0; margin-bottom: 20px; }
@@ -65,16 +74,13 @@
 </head>
 <body>
   <div class="card">
+    <img class="menu-gif" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="Animated developer illustration">
     <h1>Developer</h1>
     <p>Building modern web experiences and turning ideas into interactive pages.</p>
     <div class="folder-grid">
       <a class="folder" href="Developer/">
         <div class="folder-icon">💻</div>
         <span>Developer Man Pictures</span>
-      </a>
-      <a class="folder" href="index.html">
-        <div class="folder-icon">🏠</div>
-        <span>Back Home</span>
       </a>
     </div>
     <a class="back-link" href="index.html">Back to Home</a>
