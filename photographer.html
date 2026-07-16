@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photographer</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, rgba(3, 7, 18, 0.78), rgba(8, 47, 73, 0.62)), url('Photographer/1 (1).jpeg') center / cover fixed;
+      padding: 24px;
+    }
+    .card {
+      max-width: 520px;
+      width: 100%;
+      padding: 42px 32px 32px;
+      border-radius: 24px;
+      background: rgba(7, 18, 35, 0.55);
+      border: 1px solid rgba(125, 211, 252, 0.35);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45), 0 0 35px rgba(56, 189, 248, 0.2);
+      backdrop-filter: blur(14px);
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #e0f2fe;
+      text-shadow: 0 0 8px #38bdf8, 0 0 22px rgba(14, 165, 233, 0.85), 0 0 42px rgba(14, 165, 233, 0.5);
+    }
+    p {
+      margin: 0;
+      line-height: 1.7;
+      color: #e0f2fe;
+      font-size: 1.05rem;
+      text-shadow: 0 0 12px rgba(186, 230, 253, 0.7);
+    }
+    .funny-gif {
+      display: block;
+      width: min(120px, 36vw);
+      margin: 20px auto 0;
+      border-radius: 18px;
+      border: 2px solid rgba(186, 230, 253, 0.65);
+      box-shadow: 0 0 18px rgba(56, 189, 248, 0.65);
+    }
+    .menu {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .menu a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 142px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(186, 230, 253, 0.65);
+      background: rgba(14, 116, 144, 0.35);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      box-shadow: inset 0 0 16px rgba(125, 211, 252, 0.12), 0 0 14px rgba(56, 189, 248, 0.28);
+      transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+    .menu a:hover {
+      transform: translateY(-3px);
+      background: rgba(14, 165, 233, 0.72);
+      box-shadow: 0 0 12px #38bdf8, 0 0 28px rgba(14, 165, 233, 0.75);
+    }
+    @media (max-width: 480px) {
+      body { padding: 16px; }
+      .card { padding: 22px 16px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Photographer M9awed</h1>
+    <p>Capturing light, mood, and unforgettable moments through the lens ,brikolat .</p>
+     <video class="funny-gif" autoplay muted loop playsinline aria-label="Funny video animation">
+      <source src="ggs.mp4" type="video/mp4">
+    </video>
+    <nav class="menu" aria-label="Page navigation">
+      <a href="index.html">Back to Home</a>
+      <a href="Photographer/index.html">Chof tsaweer &#128247;</a>
+    </nav>
+  </div>
+</body>
+</html>
